@@ -242,9 +242,11 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { background: url('../img/villainscrib-promo1.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
-padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
-.swag:after { content: url('../img/VCLogo@250x100.png'); display: block; position: absolute; top: calc(100% - 100px - 1em); left: 1em; }
+.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
+padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; min-height: 30em; }
+.swag.swag-2 { background: url('../img/drums.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
+padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; min-height: 30em; }
+/*.swag:after { content: url('../img/VCLogo@250x100.png'); display: block; position: absolute; top: calc(100% - 100px - 1em); left: 1em; }*/
 .swag .swag-fill { width: 90% }
 .swag h1 { color: #fff; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; margin-top: 20px; }
