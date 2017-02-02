@@ -242,8 +242,11 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
-padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
+.swag { padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
+.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; }
+@media (max-width: 480px) {
+	.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: scroll; }
+}
 .swag.swag-2 { background: url('../img/drums.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
 padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
 /*.swag:after { content: url('../img/VCLogo@250x100.png'); display: block; position: absolute; top: calc(100% - 100px - 1em); left: 1em; }*/
