@@ -242,13 +242,14 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
-.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; }
+.swag { padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; min-height: 20em;
+	-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
+	background-size: cover; background-attachment: fixed; background-position: center center; background-repeat: no-repeat; }
 @media (max-width: 480px) {
-	.swag.swag-1 { background: url('../img/keyboard.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: scroll; }
+	.swag { background-attachment: scroll; }
 }
-.swag.swag-2 { background: url('../img/drums.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed;
-padding: 0; border-top: 3px solid black; border-bottom: 3px solid black; position: relative; }
+.swag.swag-1 { background-image: url('../img/keyboard.jpg') }
+.swag.swag-2 { background-image: url('../img/drums.jpg') }
 /*.swag:after { content: url('../img/VCLogo@250x100.png'); display: block; position: absolute; top: calc(100% - 100px - 1em); left: 1em; }*/
 .swag .swag-fill { width: 90% }
 .swag h1 { color: #fff; text-transform: uppercase; letter-spacing: 5px; }
