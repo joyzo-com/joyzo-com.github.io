@@ -215,6 +215,10 @@
       display: none;   
     }
 
+    .club h2 {
+      display: none;
+    }
+
     .feature {
       font-size: 1rem;
       padding: 2rem 0.5rem;
@@ -249,7 +253,7 @@
     /* full list: art drama dance football gymnastics infant martial music nature science sports other */
     body.art .art,
     body.drama .drama,
-    body.dance  .dance,
+    body.dance .dance,
     body.football .football,
     body.gymnastics .gymnastics,
     body.infant .infant,
@@ -360,6 +364,56 @@
     footer ul li {
       margin-top: 1rem;
     }
+
+    @media (min-width: 510px) {
+      header .messaging-1, header .messaging-2, .choice p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 700px) {
+      header .messaging-1, header .messaging-2 {
+        font-size: 2rem;
+      }
+
+      .club {
+        padding: 4rem 0;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+
+      .choice button {
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      header .messaging-1, header .messaging-2 {
+        font-size: 3rem;
+      }
+
+      .choice p {
+        font-size: 2rem;
+      }
+
+      h1, h2, h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .choice button {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 
@@ -422,21 +476,21 @@
     </div>
   </section>
   <section class="club">
-      <p class="art">Joyzo&trade; for Arts and Crafts Clubs</p>
-      <p class="dance">Joyzo&trade; for Dance Crews and Dance Academies</p>
-      <p class="drama">Joyzo&trade; for Drama and Theatre Academies</p>
-      <p class="football">Joyzo&trade; for Football Clubs</p>
-      <p class="gymnastics">Joyzo&trade; for Gymnastics Clubs</p>
-      <p class="infant">Joyzo&trade; for Preschool Clubs</p>
-      <p class="martial">Joyzo&trade; for Martial Arts Academies</p>
-      <p class="music">Joyzo&trade; for Orchestras, Bands, Choirs and Music Teachers</p>
-      <p class="nature">Joyzo&trade; for Nature Clubs</p>
-      <p class="science">Joyzo&trade; for Science and Technology Clubs</p>
-      <p class="sports">Joyzo&trade; for Sports Clubs</p>
-      <p class="other">Joyzo&trade; for Kids Clubs</p>
+    <h2 class="alt art">Joyzo&trade; for Arts and Crafts Clubs</h2>
+    <h2 class="alt dance">Joyzo&trade; for Dance Crews and Dance Academies</h2>
+    <h2 class="alt drama">Joyzo&trade; for Drama and Theatre Academies</h2>
+    <h2 class="alt football">Joyzo&trade; for Football Clubs</h2>
+    <h2 class="alt gymnastics">Joyzo&trade; for Gymnastics Clubs</h2>
+    <h2 class="alt infant">Joyzo&trade; for Preschool Clubs</h2>
+    <h2 class="alt martial">Joyzo&trade; for Martial Arts Academies</h2>
+    <h2 class="alt music">Joyzo&trade; for Orchestras, Bands, Choirs and Music Teachers</h2>
+    <h2 class="alt nature">Joyzo&trade; for Nature Clubs</h2>
+    <h2 class="alt science">Joyzo&trade; for Science and Technology Clubs</h2>
+    <h2 class="alt sports">Joyzo&trade; for Sports Clubs</h2>
+    <h2 class="alt other">Joyzo&trade; for Kids Clubs</h2>
   </section>
   <section class="feature">
-    <h2 class="all">An app for your club's parents</h2>
+    <h2 class="scroll-marker all">An app for your club's parents</h2>
     <p class="all">Parents download the Joyzo&trade; app to see upcoming classes and any fees that are due.</p>
     <p class="all">They can then place clothing orders, complete outstanding paperwork or order tickets for your events.
     </p>
@@ -605,6 +659,17 @@
     }
   }
 
+  function isAnyPartOfElementInViewport (el) {
+    const rect = el.getBoundingClientRect()
+    const windowHeight = (window.innerHeight || document.documentElement.clientHeight)
+    const windowWidth = (window.innerWidth || document.documentElement.clientWidth)
+
+    const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0)
+    const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0)
+
+    return (vertInView && horInView)
+  }
+
   function selectClubType(button, clubType) {
     document.querySelector('body').className = clubType + ' all'
 
@@ -616,7 +681,11 @@
 
     button.classList.add('active')
 
-    document.querySelector('.club').scrollIntoView({ block: 'start', behavior: 'smooth' })
+    var scrollMarker = document.querySelector('.scroll-marker')
+
+    if (!isAnyPartOfElementInViewport(scrollMarker)) {
+      scrollMarker.scrollIntoView({ block: 'end', behavior: 'smooth' })
+    }
   }
 
   function toggleQuestion(h3) {
