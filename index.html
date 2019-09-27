@@ -35,30 +35,29 @@
   <style>
     html {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: black;
     }
 
-    h2 {
+    h1, h2 {
       font-weight: 700;
       font-size: 1.5rem;
       text-align: center;
-      margin: 0 0 0.5rem 0;
     }
 
     h3 {
-      font-weight: normal;
-      font-size: 1.2rem;
+      font-weight: 700;
+      font-size: 1rem;
     }
 
-    hr {
-      border: 1px solid lightgrey;
-      margin: 0;
+    *.alt {
+      color: white;
     }
 
     nav {
       flex: 0;
       display: flex;
       flex-direction: row;
-      padding: 0.5rem 3rem;
+      padding: 0.5rem 1rem;
       padding-top: 2rem;
       align-items: center;
     }
@@ -85,16 +84,14 @@
 
     header .messaging-1 {
       font-weight: 700;
-      font-size: 2rem;
       text-align: center;
-      margin: 3rem auto 0 auto;      
+      margin: 2rem auto 0 auto;      
     }
 
     header .messaging-2 {
       font-weight: 700;
-      font-size: 2rem;
       text-align: center;
-      margin: 0.5rem auto 0 auto;
+      margin: 0.5rem auto 2rem auto;
     }
 
     header img {
@@ -112,53 +109,43 @@
       background-color: green;
       border-top: 1px solid darkgreen;
       border-bottom: 1px solid darkgreen;
-      font-size: 1rem;
-      padding: 4rem;
-    }
-
-    .intro h1 {
-      color: white;
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
+      padding: 4rem 0.5rem;
     }
 
     .intro p {
       color: white;
-      font-size: 1.2rem;
       text-align: center;
-      margin-top: 0.5rem;
+      margin-top: 1.5rem;
     }
 
     .choice {
       background-color: green;
       border-top: 1px solid darkgreen;
       border-bottom: 1px solid darkgreen;
-      padding: 4rem;
+      padding: 2rem 0.5rem;
     }
 
     .choice p {
       text-align: center;
-      font-size: 2rem;
       font-weight: 700;
       color: white;
     }
 
     .choice .buttons {
       text-align: center;
-      padding: 2rem;
+      max-width: 40rem;
+      margin: 1rem auto 0 auto;
     }
 
     .choice button {
       background-color: green;
       color: white;
-      font-size: 1.2rem;
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 0.5rem;
       margin: 0.2rem 0.1rem;
       border: 2px solid white;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 1rem;
       transition: background-color 0.15s linear, color 0.15s linear;
     }
 
@@ -168,8 +155,7 @@
     }
 
     .club {
-      font-size: 1rem;
-      padding: 6rem;
+      padding: 2rem 0.5rem;
       background-image: url('img/other.jpg');
       background-size: cover;
       background-repeat: no-repeat;
@@ -231,18 +217,24 @@
 
     .feature {
       font-size: 1rem;
-      padding: 2rem;
+      padding: 2rem 0.5rem;
     }
 
     .feature h2 {
       display: none;
     }
 
+    .feature p {
+      display: none;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
     .feature .iphone-wrap {
       position: relative;
       width: 266px;
       height: 520px;
-      margin: 0 auto;
+      margin: 1rem auto 0 auto;
       background-image: url('img/iphone.png')
     }
 
@@ -271,27 +263,18 @@
       display: block;
     }
 
-    .feature p {
-      display: none;
-      text-align: center;
-      margin: 0 0 0.5rem 0;
-    }
-
     .faq {
       background-color: green;
+      border-top: 1px solid darkgreen;
+      border-bottom: 1px solid darkgreen;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4rem;
-      border-top: 1px solid darkgreen;
-      border-bottom: 1px solid darkgreen;
+      padding: 2rem 0;
     }
 
-    .faq h2 {
-      font-weight: 700;
-      font-size: 2rem;
-      color: white;
-      margin-bottom: 2rem;
+    .faq .questions {
+      margin-top: 1rem;
     }
 
     .question {
@@ -303,9 +286,8 @@
 
     .question h3 {
       cursor: pointer;
-      background-color: lightgrey;
+      background-color: white;
       padding: 0.4rem 0.8rem;
-      border-bottom: 1px solid white;
     }
 
     .question h3::after {
@@ -340,6 +322,7 @@
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.15s linear;
+      border-top: 1px solid white;
     }
 
     .question .answer.show {
@@ -347,7 +330,6 @@
     }
 
     .question .answer p {
-      font-size: 1rem;
       margin: 1rem;
     }
 
@@ -359,7 +341,7 @@
       background-color: black;
       color: grey;
       font-size: 0.8rem;
-      padding: 3rem;
+      padding: 3rem 0.5rem;
     }
 
     footer a {
@@ -387,19 +369,20 @@
     <div class="signin"><a href='#'>Sign In</a></div>
   </nav>
   <header>
-    <p class='messaging-1'>Running a kids club is exhausting enough.</p>
-    <p class='messaging-2'>Let Joyzo take care of the admin.</p>
+    <p class='messaging-1'>Running a kids club is exhausting!</p>
+    <p class='messaging-2'>Let us take care of the admin...</p>
     <img src="img/feet-up.png" />
   </header>
   <section class="intro">
-    <h1>Joyzo is the App for Kids Clubs.</h1>
-    <p>Club leaders and parents download the Joyzo app onto their smartphones.</p>
-    <p>The app has loads of features to make collaboration easier.</p>
+    <h1 class="alt">The App for Kids Clubs</h1>
+    <p>Club leaders and parents download the Joyzo&trade; app onto their smartphones.</p>
+    <p>The app has loads of features to engage parents and reduce admin.</p>
   </section>
   <section class="feature">
-      <h2 class="all">Track your finances automatically</h2>
-      <p class="all">Raise invoices with a few taps and then parents can clearly see what they owe.</p>
-      <p class="all">Joyzo will keep track of who hasn't paid yet and chase them automatically.</p>
+      <h2 class="all">Get paid</h2>
+      <p class="all">Raise invoices with a few taps.</p>
+      <p class="all">Parents can see clearly what they owe and how to pay.</p>
+      <p class="all">Joyzo&trade; will check your account and automatically chase outstanding fees for you.</p>
       <div class="iphone-wrap">
         <img src="img/app-fees.gif" />
       </div>
@@ -407,7 +390,7 @@
     <section class="feature">
       <h2 class="all">Go paperless</h2>
       <p class="all">Emergency contact forms, permission slips, coach seat requirements, dietary needs, you name it.</p>
-      <p class="all">Joyzo will get parents to complete your forms, store the data securely, and tabulate 
+      <p class="all">Joyzo&trade; will get parents to complete your forms, store the data securely, and tabulate 
         the results for you.
       </p>
       <div class="iphone-wrap">
@@ -415,7 +398,7 @@
         </div>
     </section>
     <section class="feature">
-      <h2 class="all">Your own personal market place</h2>
+      <h2 class="all">Your store</h2>
       <p class="all">Sell your clothing, event tickets and merchandise directly to parents.</p>
       <div class="iphone-wrap">
           <img src="img/app-store.gif" />
@@ -439,22 +422,22 @@
     </div>
   </section>
   <section class="club">
-      <p class="art">Joyzo for Arts and Crafts Clubs</p>
-      <p class="dance">Joyzo for Dance Crews and Dance Academies</p>
-      <p class="drama">Joyzo for Drama and Theatre Academies</p>
-      <p class="football">Joyzo for Football Clubs</p>
-      <p class="gymnastics">Joyzo for Gymnastics Clubs</p>
-      <p class="infant">Joyzo for Preschool Clubs</p>
-      <p class="martial">Joyzo for Martial Arts Academies</p>
-      <p class="music">Joyzo for Orchestras, Bands, Choirs and Music Teachers</p>
-      <p class="nature">Joyzo for Nature Clubs</p>
-      <p class="science">Joyzo for Science and Technology Clubs</p>
-      <p class="sports">Joyzo for Sports Clubs</p>
-      <p class="other">Joyzo for Kids Clubs</p>
+      <p class="art">Joyzo&trade; for Arts and Crafts Clubs</p>
+      <p class="dance">Joyzo&trade; for Dance Crews and Dance Academies</p>
+      <p class="drama">Joyzo&trade; for Drama and Theatre Academies</p>
+      <p class="football">Joyzo&trade; for Football Clubs</p>
+      <p class="gymnastics">Joyzo&trade; for Gymnastics Clubs</p>
+      <p class="infant">Joyzo&trade; for Preschool Clubs</p>
+      <p class="martial">Joyzo&trade; for Martial Arts Academies</p>
+      <p class="music">Joyzo&trade; for Orchestras, Bands, Choirs and Music Teachers</p>
+      <p class="nature">Joyzo&trade; for Nature Clubs</p>
+      <p class="science">Joyzo&trade; for Science and Technology Clubs</p>
+      <p class="sports">Joyzo&trade; for Sports Clubs</p>
+      <p class="other">Joyzo&trade; for Kids Clubs</p>
   </section>
   <section class="feature">
     <h2 class="all">An app for your club's parents</h2>
-    <p class="all">Parents download the Joyzo app to see upcoming classes and any fees that are due.</p>
+    <p class="all">Parents download the Joyzo&trade; app to see upcoming classes and any fees that are due.</p>
     <p class="all">They can then place clothing orders, complete outstanding paperwork or order tickets for your events.
     </p>
   </section>
@@ -464,7 +447,7 @@
     <p class="all">The app will regularly check your account and let you know who has and hasn't paid.</p>
   </section>
   <section class="feature">
-    <h2 class="all">Get paid in a timely fashion</h2>
+    <h2 class="all">Track your payments</h2>
     <p class="all">Parents will automatically get reminders as payments are coming up and more notices if they are
       overdue.</p>
     <p class="all">You can add late fees automatically too.</p>
@@ -527,8 +510,8 @@
   </section>
   <section class="feature">
     <h2 class="all">Digitize your paperwork</h2>
-    <p class="all">Design a form in Joyzo, defining the data fields you want, and send it to parents.</p>
-    <p class="all">Joyzo will capture the info and you can view the results in an Excel-style table.
+    <p class="all">Design a form in Joyzo&trade;, defining the data fields you want, and send it to parents.</p>
+    <p class="all">You can view the results in an Excel-style table.
     </p>
   </section>
   <section class="feature">
@@ -541,52 +524,57 @@
     <p class="all">We'll also deliver your messages and invoices via email, Facebook and/or Twitter.</p>
   </section>
   <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="question">
-      <h3 onclick="toggleQuestion(this)">What is Joyzo?</h3>
-      <div class="answer">
-        <p>Joyzo is an App for connecting club leaders with parents and students.</p>
-        <p>It makes it easy for club leaders to collect class fees, handle clothing orders,
-          communicate venue changes, advertise club events and so much more.</p>
+    <h2 class="alt">Frequently Asked Questions</h2>
+    <div class="questions">
+      <div class="question">
+        <h3 onclick="toggleQuestion(this)">What is Joyzo&trade;?</h3>
+        <div class="answer">
+          <p>Joyzo&trade; is an App for connecting club leaders with parents and students.</p>
+          <p>It makes it easy for club leaders to collect class fees, handle clothing orders,
+            communicate venue changes, advertise club events and so much more.</p>
+        </div>
       </div>
-    </div>
-    <div class="question">
-      <h3 onclick="toggleQuestion(this)">How much does Joyzo cost?</h3>
-      <div class="answer">
-        <p>We're working hard to make the platform as affordable as possible.</p>
-        <p>We'll post definitive pricing soon.</p>
-        <p>Contact us at hello@joyzo.com and we may be able to get you on the
-          early-adopters discount programme.</p>
-        <!-- <p>
-          <label>How many students do you have?</label>
-          <input id="student-count" type="number" min="0" oninput="updateAnnualCost()" />
-        </p>
-        <p>
-          <label>How many weeks do you operate each year?</label>
-          <input id="week-count" type="number" min="0" value="42" oninput="updateAnnualCost()" />
-        </p>
-        <p id='annual-cost-p' style="visibility: hidden">£ <span id='annual-cost-amount'>X</span> per year (incl VAT).
-        </p>
-        <p id='annual-cost-notes' style="visibility: hidden">The cost is 5.4p per active student per week.
-          An active student is one that is scheduled to appear in at least one class during that week.
-          Billing is monthly, subject to a minimum of £2 inc VAT.
-        </p> -->
+      <div class="question">
+        <h3 onclick="toggleQuestion(this)">How much does Joyzo&trade; cost?</h3>
+        <div class="answer">
+          <p>We're working hard to make the platform as affordable as possible and we'll post definitive pricing soon..
+          </p>
+          <p>In the meantime, we can give you indicative pricing if you contact us at hello@joyzo.com.
+            Let us know how many students you work with, and how many weeks of the year you're operational.</p>
+          <!-- <p>
+            <label>How many students do you have?</label>
+            <input id="student-count" type="number" min="0" oninput="updateAnnualCost()" />
+          </p>
+          <p>
+            <label>How many weeks do you operate each year?</label>
+            <input id="week-count" type="number" min="0" value="42" oninput="updateAnnualCost()" />
+          </p>
+          <p id='annual-cost-p' style="visibility: hidden">£ <span id='annual-cost-amount'>X</span> per year (incl VAT).
+          </p>
+          <p id='annual-cost-notes' style="visibility: hidden">The cost is 5.4p per active student per week.
+            An active student is one that is scheduled to appear in at least one class during that week.
+            Billing is monthly, subject to a minimum of £2 inc VAT.
+          </p> -->
+        </div>
       </div>
-    </div>
-    <div class="question">
-      <h3 onclick="toggleQuestion(this)">How do I connect parents?</h3>
-      <div class=" answer">
-        <p>You begin by importing your class lists from an Excel file. Or you can just type them in.</p>
-        <p>We'll generate an access code for each child for you to hand out.</p>
-        <p>Parents then setup their own Joyzo account and add their kids using the access code.</p>
+      <div class="question">
+        <h3 onclick="toggleQuestion(this)">How do I connect parents?</h3>
+        <div class=" answer">
+          <p>You begin by importing your class lists from an Excel file. Or you can just type them in.</p>
+          <p>We'll generate an access code for each child for you to hand out.</p>
+          <p>Parents then setup their own Joyzo&trade; account and add their kids using the access code.</p>
+        </div>
       </div>
-    </div>
-    <div class="question">
-      <h3 onclick="toggleQuestion(this)">How do I sign up?</h3>
-      <div class="answer">
-        <p>We're building the product right now, working with clubs to ensure we build an app that meets the unique
-          needs of kids clubs.</p>
-        <p>If you're running a club and would like to get access to the platform early we'd love to hear from you.</p>
+      <div class="question">
+        <h3 onclick="toggleQuestion(this)">How do I sign up?</h3>
+        <div class="answer">
+          <p>We're building the product right now, working with clubs to ensure we build an app that meets the unique
+            needs of kids clubs.</p>
+          <p>If you're running a club and would like to get access to the platform early we'd love to hear from you.</p>
+          <p>The early adopters programme is a discounted scheme that gives clubs full access to the platform,
+            at a heavily discounted rate, in return for feedback.
+          </p>
+        </div>
       </div>
     </div>
   </section>
