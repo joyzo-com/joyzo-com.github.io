@@ -1,192 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Joyzo</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- favicons -->
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicons/manifest.json">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Joyzo</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css?ver=3" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-  </head>  
-  <body id="top">
-    <header id="home">
-      <nav>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-              <nav class="pull">
-                <ul class="top-nav">
-                  <li><a href="#intro">Hello there <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#features">Things I do <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#contact">Contact <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-right navicon">
-              <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center inner">
-              <h1 class="animated fadeInDown"><img src="img/Joyzo@199x75.png" alt="Joyzo"></h1>
-              <p class="animated fadeInUp delay-05s">The online home of Karl Hulme</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <section class="intro text-center section-padding" id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 wp1">
-            <h1 class="arrow">Hello there</h1>
-            <p>I live in sunny Bournemouth with my family.  My wife Catherine is smart, kind and supportive and 
-              because of my exploits regularly forced to roll her eyes.  Our kids, Reece and Jenna, ensure our house is
-              never too quiet unless we're all in a snuggled heap for movie night.</p>
-              <p>I work with a range of companies to assist with their IT systems/software development projects 
-                on a consultation basis.  I am also the Director of Development for ZONR,
-                providing IoT kit to UK social housing organisations.</p>  
-          </div>
-        </div>
+  <!-- favicons -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <link href="css/reset.css" rel="stylesheet">
+
+  <style>
+    html {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 0 0.5rem 0;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+
+    hr {
+      border: 1px solid lightgrey;
+      margin: 0;
+    }
+
+    nav {
+      flex: 0;
+      display: flex;
+      flex-direction: row;
+      padding: 0.5rem 3rem;
+      padding-top: 2rem;
+      align-items: center;
+    }
+
+    nav .logo {
+      flex: 0;
+      text-align: left;
+      display: block;
+      width: 8rem;
+    }
+
+    nav .signin {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav .signin a {
+      padding: 0.5rem 1rem;
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    header .messaging-1 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin: 3rem auto 0 auto;      
+    }
+
+    header .messaging-2 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0.5rem auto 0 auto;
+    }
+
+    header img {
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    section {
+      border-bottom: 0.5px solid lightgrey;
+    }
+
+    .intro {
+      background-color: green;
+      border-top: 1px solid darkgreen;
+      border-bottom: 1px solid darkgreen;
+      font-size: 1rem;
+      padding: 4rem;
+    }
+
+    .intro h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .intro p {
+      color: white;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .choice {
+      background-color: green;
+      border-top: 1px solid darkgreen;
+      border-bottom: 1px solid darkgreen;
+      padding: 4rem;
+    }
+
+    .choice p {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .choice .buttons {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .choice button {
+      background-color: green;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      margin: 0.2rem 0.1rem;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.15s linear, color 0.15s linear;
+    }
+
+    .choice button.active {
+      background-color: white;
+      color: green;
+    }
+
+    .club {
+      font-size: 1rem;
+      padding: 6rem;
+      background-image: url('img/other.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: background-image 0.2s ease-in-out;
+    }
+
+    body.art .club {
+      background-image: url('img/art.jpg');
+    }
+
+    body.dance .club {
+      background-image: url('img/dance.jpg');
+    }
+
+    body.drama .club {
+      background-image: url('img/drama.jpg');
+    }
+
+    body.football .club {
+      background-image: url('img/football.jpg');
+    }
+
+    body.gymnastics .club {
+      background-image: url('img/gymnastics.jpg');
+    }
+
+    body.infant .club {
+      background-image: url('img/infant.jpg');
+    }
+
+    body.martial .club {
+      background-image: url('img/martial.jpg');
+    }
+
+    body.music .club {
+      background-image: url('img/music.jpg');
+    }
+
+    body.nature .club {
+      background-image: url('img/nature.jpg');
+    }
+
+    body.science .club {
+      background-image: url('img/science.jpg');
+    }
+
+    body.sports .club {
+      background-image: url('img/sports.jpg');
+    }
+
+    .club p {
+      color: white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      display: none;   
+    }
+
+    .feature {
+      font-size: 1rem;
+      padding: 2rem;
+    }
+
+    .feature h2 {
+      display: none;
+    }
+
+    .feature .iphone-wrap {
+      position: relative;
+      width: 266px;
+      height: 520px;
+      margin: 0 auto;
+      background-image: url('img/iphone.png')
+    }
+
+    .feature .iphone-wrap img {
+      position: absolute;
+      left: 9.5%;
+      top: 12.5%;
+      width: 82%;
+      height: 74.5%;
+    }
+
+    /* full list: art drama dance football gymnastics infant martial music nature science sports other */
+    body.art .art,
+    body.drama .drama,
+    body.dance  .dance,
+    body.football .football,
+    body.gymnastics .gymnastics,
+    body.infant .infant,
+    body.martial .martial,
+    body.music .music,
+    body.nature .nature,
+    body.science .science,
+    body.sports .sports,
+    body.other .other,
+    body.all .all {
+      display: block;
+    }
+
+    .feature p {
+      display: none;
+      text-align: center;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .faq {
+      background-color: green;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem;
+      border-top: 1px solid darkgreen;
+      border-bottom: 1px solid darkgreen;
+    }
+
+    .faq h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      width: 100%;
+      max-width: 40rem;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    .question h3 {
+      cursor: pointer;
+      background-color: lightgrey;
+      padding: 0.4rem 0.8rem;
+      border-bottom: 1px solid white;
+    }
+
+    .question h3::after {
+      content: '▼';
+      position: absolute;
+      right: 1rem;
+    }
+
+    .question h3.show::after {
+      content: '▲';
+      position: absolute;
+      right: 1rem;
+    }
+
+    .question label {
+      font-size: 1rem;
+      display: block;
+    }
+
+    .question input {
+      font-size: 1rem;
+      display: block;
+      padding: 0.5rem;
+      width: 5rem;
+      margin-top: 0.4rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .question .answer {
+      background-color: lightgrey;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.15s linear;
+    }
+
+    .question .answer.show {
+      max-height: 30rem;
+    }
+
+    .question .answer p {
+      font-size: 1rem;
+      margin: 1rem;
+    }
+
+    .question #annual-cost-amount {
+      font-size: 2rem;
+    }
+
+    footer {
+      background-color: black;
+      color: grey;
+      font-size: 0.8rem;
+      padding: 3rem;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: grey;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .email {
+      font-size: 1.2rem;
+    }
+
+    footer ul li {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body class="other all" onload="handleLoad()">
+  <nav>
+    <img class="logo" src="img/joyzo-logo.png" alt="Joyzo" />
+    <div class="signin"><a href='#'>Sign In</a></div>
+  </nav>
+  <header>
+    <p class='messaging-1'>Running a kids club is exhausting enough.</p>
+    <p class='messaging-2'>Let Joyzo take care of the admin.</p>
+    <img src="img/feet-up.png" />
+  </header>
+  <section class="intro">
+    <h1>Joyzo is the App for Kids Clubs.</h1>
+    <p>Club leaders and parents download the Joyzo app onto their smartphones.</p>
+    <p>The app has loads of features to make collaboration easier.</p>
+  </section>
+  <section class="feature">
+      <h2 class="all">Track your finances automatically</h2>
+      <p class="all">Raise invoices with a few taps and then parents can clearly see what they owe.</p>
+      <p class="all">Joyzo will keep track of who hasn't paid yet and chase them automatically.</p>
+      <div class="iphone-wrap">
+        <img src="img/app-fees.gif" />
       </div>
     </section>
-    <section class="features text-center section-padding" id="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="arrow">Things I do</h1>
-            <div class="features-wrapper">
-              <div class="col-md-4 wp2">
-                <div class="icon">
-                  <i class="fa fa-code shadow"></i>
-                </div>
-                <h2>Programming</h2>
-                <p>I started programming when my Dad purchased an Amstrad CPC 6128. I copied listings from the manual into the computer
-                  and Dad would then fix it for me - he's still my hero! I've written software professionally since 2001 working on financial and mobile systems.
-                </p>
-              </div>
-              <div class="col-md-4 wp2 delay-05s">
-                <div class="icon">
-                  <i class="fa fa-gamepad shadow"></i>
-                </div>
-                <h2>Gamedev</h2>
-                <p>For the last few years I've been interested in game development. I've created many prototypes in a variety of engines and learnt a lot along the way.
-                  I'm now working hard on a platformer/fighting game that puts all that studying to good use.
-                </p>
-              </div>
-              <div class="col-md-4 wp2 delay-1s">
-                <div class="icon">
-                  <i class="fa fa-music shadow"></i>
-                </div>
-                <h2>Music</h2>
-                <p>After a tricky time at High School in my late teens I discovered music was good therapy. I would escape into the music room and hammer
-                  at the piano with very limited skill but inexhaustable enthusiasm. I now play the drums too and enjoy singing, also with very limited skill.
-                </p>
-              </div>
-
-              <div class="clearfix"></div>
-            </div>
-          </div>
+    <section class="feature">
+      <h2 class="all">Go paperless</h2>
+      <p class="all">Emergency contact forms, permission slips, coach seat requirements, dietary needs, you name it.</p>
+      <p class="all">Joyzo will get parents to complete your forms, store the data securely, and tabulate 
+        the results for you.
+      </p>
+      <div class="iphone-wrap">
+          <img src="img/app-forms.gif" />
         </div>
-      </div>
     </section>
-    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="arrow">Drop me a line</h1>
-          </div>
+    <section class="feature">
+      <h2 class="all">Your own personal market place</h2>
+      <p class="all">Sell your clothing, event tickets and merchandise directly to parents.</p>
+      <div class="iphone-wrap">
+          <img src="img/app-store.gif" />
         </div>
-        <div class="row contact-details">
-          <div class="col-md-4">
-            <div class="light-box box-hover">
-              <h3><i class="fa fa-envelope"></i><span>Email</span></h2>
-              <p><a href="mailto:karlhulme@hotmail.com">karlhulme@hotmail.com</a></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="light-box box-hover">
-              <h3><i class="fa fa-twitter"></i><span>Twitter</span></h2>
-              <p><a href="https://twitter.com/KarlHulme">@KarlHulme</a></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="light-box box-hover">
-              <h3><i class="fa fa-linkedin"></i><span>LinkedIn</span></h2>
-              <p><a href="https://uk.linkedin.com/in/karlhulme">/in/karlhulme</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="social-buttons">
-              <li><a href="mailto:karlhulme@hotmail.com" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-              <li><a href="https://twitter.com/KarlHulme" class="social-btn"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://uk.linkedin.com/in/karlhulme" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p>&copy; 2013 - <script>document.write(new Date().getFullYear())</script> Joyzo Ltd, All Rights Reserved</p>
-            <p><em>Website v45</em></p>
-          </div>
-        </div>
+  <section class="choice">
+    <p>What kind of club are you running?</p>
+    <div class="buttons">
+      <button onclick="selectClubType(this, 'art')">Art</button>
+      <button onclick="selectClubType(this, 'drama')">Drama</button>
+      <button onclick="selectClubType(this, 'dance')">Dance/Theatre</button>
+      <button onclick="selectClubType(this, 'football')">Football</button>
+      <button onclick="selectClubType(this, 'gymnastics')">Gymnastics</button>
+      <button onclick="selectClubType(this, 'infant')">Pre-School</button>
+      <button onclick="selectClubType(this, 'martial')">Martial Arts</button>
+      <button onclick="selectClubType(this, 'music')">Music</button>
+      <button onclick="selectClubType(this, 'nature')">Nature</button>
+      <button onclick="selectClubType(this, 'science')">Science/Tech</button>
+      <button onclick="selectClubType(this, 'sports')">Sports</button>
+      <button onclick="selectClubType(this, 'other')">Other</button>
+    </div>
+  </section>
+  <section class="club">
+      <p class="art">Joyzo for Arts and Crafts Clubs</p>
+      <p class="dance">Joyzo for Dance Crews and Dance Academies</p>
+      <p class="drama">Joyzo for Drama and Theatre Academies</p>
+      <p class="football">Joyzo for Football Clubs</p>
+      <p class="gymnastics">Joyzo for Gymnastics Clubs</p>
+      <p class="infant">Joyzo for Preschool Clubs</p>
+      <p class="martial">Joyzo for Martial Arts Academies</p>
+      <p class="music">Joyzo for Orchestras, Bands, Choirs and Music Teachers</p>
+      <p class="nature">Joyzo for Nature Clubs</p>
+      <p class="science">Joyzo for Science and Technology Clubs</p>
+      <p class="sports">Joyzo for Sports Clubs</p>
+      <p class="other">Joyzo for Kids Clubs</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">An app for your club's parents</h2>
+    <p class="all">Parents download the Joyzo app to see upcoming classes and any fees that are due.</p>
+    <p class="all">They can then place clothing orders, complete outstanding paperwork or order tickets for your events.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Create invoices quickly and easily</h2>
+    <p class="all">You can raise one-off invoices or you can create invoices for all the kids in one class.</p>
+    <p class="all">The app will regularly check your account and let you know who has and hasn't paid.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Get paid in a timely fashion</h2>
+    <p class="all">Parents will automatically get reminders as payments are coming up and more notices if they are
+      overdue.</p>
+    <p class="all">You can add late fees automatically too.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Management reports</h2>
+    <p class="all">View a breakdown of revenue by class and time to identify your best performing sessions.</p>
+    <p class="all">Perform "what-if" analysis to experiment with pricing to make the best use of your teaching time.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Key information at lesson time</h2>
+    <p class="all">Such as birthdays and membership anniversaries and quickly identify anyone with outstanding fees.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Keep parents informed</h2>
+    <p class="all">Send a message to a group of parents and they'll get a notification directly on their phone.</p>
+    <p class="all">Parents can respond but only you can message the whole group.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Pass on expenses to parents</h2>
+    <p class="all">Log expenses like books, grading fees, coach hire, etc, so parents can pay what they owe.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Sell your club clothing direct to parents</h2>
+    <p class="dance">Whether it's grade 5 tap shoes or crisp white trainers, parents order your clothing through the
+      app.
+      <p class="football">Parents can order team shirts, hoodies and other kit you sell directly through the app.
+        <p class="art drama gymnastics infant martial music nature science sports other">Parents order uniform through
+          the app.</p>
+        <p class="all">Parents are guided through the order process to capture any required options like size, colour or
+          even the name to be printed on the back!</p>
+        <p class="all">Orders are then consolidated together for you to pass on to your clothing supplier.</p>
+      </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Showcase your big events</h2>
+    <p class="all">Parents can see the big event in the app and can add it to their regular calendar.</p>
+    <p class="all">You can also build packages that include rehearsal times, event clothing and the big day.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Sell tickets</h2>
+    <p class="all">Students and parents can order digital tickets and use their smartphone as proof on the day of the
+      event.</p>
+    <p class="all">You can keep track of sales and optionally limit ticket numbers for seated events.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Get sign ups for one-2-ones</h2>
+    <p class="all">Parents can book their kids into one-2-one sessions directly through the app.</p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Keep contact details up to date</h2>
+    <p class="all">The app will remind parents to update their emergency contact details every year.</p>
+    <p class="all">The details will be stored securely on your phone, so you'll always have access to them.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Take registers</h2>
+    <p class="all">Use a single-tap to register each student into your class.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Digitize your paperwork</h2>
+    <p class="all">Design a form in Joyzo, defining the data fields you want, and send it to parents.</p>
+    <p class="all">Joyzo will capture the info and you can view the results in an Excel-style table.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Sell merchandise from your events</h2>
+    <p class="all">Offer DVDs, videos and digital pictures for sale inside the app for parents to buy.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="all">Parents without a smartphone?</h2>
+    <p class="all">We'll also deliver your messages and invoices via email, Facebook and/or Twitter.</p>
+  </section>
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="question">
+      <h3 onclick="toggleQuestion(this)">What is Joyzo?</h3>
+      <div class="answer">
+        <p>Joyzo is an App for connecting club leaders with parents and students.</p>
+        <p>It makes it easy for club leaders to collect class fees, handle clothing orders,
+          communicate venue changes, advertise club events and so much more.</p>
       </div>
-    </footer>
+    </div>
+    <div class="question">
+      <h3 onclick="toggleQuestion(this)">How much does Joyzo cost?</h3>
+      <div class="answer">
+        <p>We're working hard to make the platform as affordable as possible.</p>
+        <p>We'll post definitive pricing soon.</p>
+        <p>Contact us at hello@joyzo.com and we may be able to get you on the
+          early-adopters discount programme.</p>
+        <!-- <p>
+          <label>How many students do you have?</label>
+          <input id="student-count" type="number" min="0" oninput="updateAnnualCost()" />
+        </p>
+        <p>
+          <label>How many weeks do you operate each year?</label>
+          <input id="week-count" type="number" min="0" value="42" oninput="updateAnnualCost()" />
+        </p>
+        <p id='annual-cost-p' style="visibility: hidden">£ <span id='annual-cost-amount'>X</span> per year (incl VAT).
+        </p>
+        <p id='annual-cost-notes' style="visibility: hidden">The cost is 5.4p per active student per week.
+          An active student is one that is scheduled to appear in at least one class during that week.
+          Billing is monthly, subject to a minimum of £2 inc VAT.
+        </p> -->
+      </div>
+    </div>
+    <div class="question">
+      <h3 onclick="toggleQuestion(this)">How do I connect parents?</h3>
+      <div class=" answer">
+        <p>You begin by importing your class lists from an Excel file. Or you can just type them in.</p>
+        <p>We'll generate an access code for each child for you to hand out.</p>
+        <p>Parents then setup their own Joyzo account and add their kids using the access code.</p>
+      </div>
+    </div>
+    <div class="question">
+      <h3 onclick="toggleQuestion(this)">How do I sign up?</h3>
+      <div class="answer">
+        <p>We're building the product right now, working with clubs to ensure we build an app that meets the unique
+          needs of kids clubs.</p>
+        <p>If you're running a club and would like to get access to the platform early we'd love to hear from you.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="email">Questions? Email <a href="mailto:hello@joyzo.com">hello@joyzo.com</a></div>
+    <ul>
+      <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </footer>
+</body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/modernizr.js"></script>
-  </body>
+<script>
+  function handleLoad() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var clubType = (urlParams.get('club') || '').toLocaleLowerCase()
+
+    if (clubType) {
+      document.querySelector('body').className = clubType + ' all'
+
+      var buttons = document.querySelectorAll('.choice .buttons button')
+
+      for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].innerText.toLocaleLowerCase().includes(clubType)) {
+          buttons[i].classList.add('active')
+        }
+      }
+    }
+  }
+
+  function selectClubType(button, clubType) {
+    document.querySelector('body').className = clubType + ' all'
+
+    var buttons = document.querySelectorAll('.choice .buttons button')
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('active')
+    }
+
+    button.classList.add('active')
+
+    document.querySelector('.club').scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }
+
+  function toggleQuestion(h3) {
+    h3.classList.toggle('show')
+    h3.nextElementSibling.classList.toggle('show')
+  }
+
+  function updateAnnualCost() {
+    try {
+      var studentCount = document.getElementById('student-count').value
+      var weekCount = document.getElementById('week-count').value
+      var cost = Math.ceil(Number(studentCount) * Number(weekCount) * 0.054)
+
+      if (cost > 0) {
+        cost = Math.max(cost, 24)
+        document.getElementById('annual-cost-amount').innerText = cost.toFixed(0)
+      }
+
+      var visibility = cost > 0 ? 'visible' : 'hidden'
+      document.getElementById('annual-cost-p').style.visibility = visibility
+      document.getElementById('annual-cost-notes').style.visibility = visibility
+    } catch (err) {
+      document.getElementById('annual-cost-p').style.visibility = 'hidden'
+      document.getElementById('annual-cost-notes').style.visibility = 'hidden'
+    }
+  }
+</script>
 </html>
