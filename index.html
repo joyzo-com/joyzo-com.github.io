@@ -38,7 +38,8 @@
       color: black;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-weight: 700;
       font-size: 1.5rem;
       text-align: center;
@@ -85,7 +86,7 @@
     header .messaging-1 {
       font-weight: 700;
       text-align: center;
-      margin: 2rem auto 0 auto;      
+      margin: 2rem auto 0 auto;
     }
 
     header .messaging-2 {
@@ -212,11 +213,17 @@
       font-weight: 700;
       font-size: 2rem;
       text-align: center;
-      display: none;   
+      display: none;
     }
 
     .club h2 {
       display: none;
+    }
+
+    .minor-features {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     .feature {
@@ -365,21 +372,58 @@
       margin-top: 1rem;
     }
 
+    @media (min-width: 350px) {
+
+      header .messaging-1,
+      header .messaging-2,
+      .choice p {
+        font-size: 1.25rem;
+      }
+    }
+
     @media (min-width: 510px) {
-      header .messaging-1, header .messaging-2, .choice p {
+
+      header .messaging-1,
+      header .messaging-2,
+      .choice p {
         font-size: 1.5rem;
+      }
+
+      .intro {
+        padding: 4rem 2rem;
+      }
+
+      .feature {
+        padding: 2rem 2rem;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .minor-features .feature {
+        width: 50%;
+      }
+
+      .major-features .feature {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .major-features .feature.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .major-features .feature .feature-text {
+        width: 50%;
+        padding-top: 6rem;
+      }
+
+      .major-features .feature .feature-image {
+        width: 50%;
       }
     }
 
     @media (min-width: 700px) {
-      header .messaging-1, header .messaging-2 {
-        font-size: 2rem;
-      }
-
-      .club {
-        padding: 4rem 0;
-      }
-
       h3 {
         font-size: 1.5rem;
       }
@@ -388,21 +432,29 @@
         font-size: 1.25rem;
       }
 
+      header .messaging-1,
+      header .messaging-2 {
+        font-size: 2rem;
+      }
+
+      .club {
+        padding: 4rem 0;
+      }
+
       .choice button {
         font-size: 1.25rem;
+      }
+
+      .feature {
+        padding: 2rem 3rem;
       }
     }
 
     @media (min-width: 1000px) {
-      header .messaging-1, header .messaging-2 {
-        font-size: 3rem;
-      }
 
-      .choice p {
-        font-size: 2rem;
-      }
-
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         font-size: 2rem;
       }
 
@@ -410,8 +462,21 @@
         font-size: 1.5rem;
       }
 
+      header .messaging-1,
+      header .messaging-2 {
+        font-size: 3rem;
+      }
+
+      .choice p {
+        font-size: 2rem;
+      }
+
       .choice button {
         font-size: 1.5rem;
+      }
+
+      .feature {
+        padding: 2rem 4rem;
       }
     }
   </style>
@@ -432,32 +497,47 @@
     <p>Club leaders and parents download the Joyzo&trade; app onto their smartphones.</p>
     <p>The app has loads of features to engage parents and reduce admin.</p>
   </section>
-  <section class="feature">
-      <h2 class="all">Get paid</h2>
-      <p class="all">Raise invoices with a few taps.</p>
-      <p class="all">Parents can see clearly what they owe and how to pay.</p>
-      <p class="all">Joyzo&trade; will check your account and automatically chase outstanding fees for you.</p>
-      <div class="iphone-wrap">
-        <img src="img/app-fees.gif" />
+  <div class="major-features">
+    <section class="feature">
+      <div class="feature-text">
+        <h2 class="all">Get paid</h2>
+        <p class="all">Raise invoices with a few taps.</p>
+        <p class="all">Parents can see clearly what they owe and how to pay.</p>
+        <p class="all">Joyzo&trade; will check your account and automatically chase outstanding fees for you.</p>
+      </div>
+      <div class="feature-image">
+        <div class="iphone-wrap">
+          <img src="img/app-fees.gif" />
+        </div>
+      </div>
+    </section>
+    <section class="feature reverse">
+      <div class="feature-text">
+        <h2 class="all">Go paperless</h2>
+        <p class="all">Emergency contact forms, permission slips, coach seat requirements, dietary needs, you name it.
+        </p>
+        <p class="all">Joyzo&trade; will get parents to complete your forms, store the data securely, and tabulate
+          the results for you.
+        </p>
+      </div>
+      <div class="feature-image">
+        <div class="iphone-wrap">
+          <img src="img/app-forms.gif" />
+        </div>
       </div>
     </section>
     <section class="feature">
-      <h2 class="all">Go paperless</h2>
-      <p class="all">Emergency contact forms, permission slips, coach seat requirements, dietary needs, you name it.</p>
-      <p class="all">Joyzo&trade; will get parents to complete your forms, store the data securely, and tabulate 
-        the results for you.
-      </p>
-      <div class="iphone-wrap">
-          <img src="img/app-forms.gif" />
-        </div>
-    </section>
-    <section class="feature">
-      <h2 class="all">Your store</h2>
-      <p class="all">Sell your clothing, event tickets and merchandise directly to parents.</p>
-      <div class="iphone-wrap">
+      <div class="feature-text">
+        <h2 class="all">Your store</h2>
+        <p class="all">Sell your clothing, event tickets and merchandise directly to parents.</p>
+      </div>
+      <div class="feature-image">
+        <div class="iphone-wrap">
           <img src="img/app-store.gif" />
         </div>
+      </div>
     </section>
+  </div>
   <section class="choice">
     <p>What kind of club are you running?</p>
     <div class="buttons">
@@ -489,94 +569,100 @@
     <h2 class="alt sports">Joyzo&trade; for Sports Clubs</h2>
     <h2 class="alt other">Joyzo&trade; for Kids Clubs</h2>
   </section>
-  <section class="feature">
-    <h2 class="scroll-marker all">An app for your club's parents</h2>
-    <p class="all">Parents download the Joyzo&trade; app to see upcoming classes and any fees that are due.</p>
-    <p class="all">They can then place clothing orders, complete outstanding paperwork or order tickets for your events.
-    </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Create invoices quickly and easily</h2>
-    <p class="all">You can raise one-off invoices or you can create invoices for all the kids in one class.</p>
-    <p class="all">The app will regularly check your account and let you know who has and hasn't paid.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Track your payments</h2>
-    <p class="all">Parents will automatically get reminders as payments are coming up and more notices if they are
-      overdue.</p>
-    <p class="all">You can add late fees automatically too.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Management reports</h2>
-    <p class="all">View a breakdown of revenue by class and time to identify your best performing sessions.</p>
-    <p class="all">Perform "what-if" analysis to experiment with pricing to make the best use of your teaching time.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Key information at lesson time</h2>
-    <p class="all">Such as birthdays and membership anniversaries and quickly identify anyone with outstanding fees.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Keep parents informed</h2>
-    <p class="all">Send a message to a group of parents and they'll get a notification directly on their phone.</p>
-    <p class="all">Parents can respond but only you can message the whole group.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Pass on expenses to parents</h2>
-    <p class="all">Log expenses like books, grading fees, coach hire, etc, so parents can pay what they owe.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Sell your club clothing direct to parents</h2>
-    <p class="dance">Whether it's grade 5 tap shoes or crisp white trainers, parents order your clothing through the
-      app.
-      <p class="football">Parents can order team shirts, hoodies and other kit you sell directly through the app.
-        <p class="art drama gymnastics infant martial music nature science sports other">Parents order uniform through
-          the app.</p>
-        <p class="all">Parents are guided through the order process to capture any required options like size, colour or
-          even the name to be printed on the back!</p>
-        <p class="all">Orders are then consolidated together for you to pass on to your clothing supplier.</p>
+  <div class="minor-features">
+    <section class="feature">
+      <h2 class="scroll-marker all">An app for the parents</h2>
+      <p class="all">Parents download the Joyzo&trade; app to see upcoming classes and any fees that are due.</p>
+      <p class="all">They can then place clothing orders, complete outstanding paperwork or order tickets for your
+        events.
       </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Showcase your big events</h2>
-    <p class="all">Parents can see the big event in the app and can add it to their regular calendar.</p>
-    <p class="all">You can also build packages that include rehearsal times, event clothing and the big day.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Sell tickets</h2>
-    <p class="all">Students and parents can order digital tickets and use their smartphone as proof on the day of the
-      event.</p>
-    <p class="all">You can keep track of sales and optionally limit ticket numbers for seated events.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Get sign ups for one-2-ones</h2>
-    <p class="all">Parents can book their kids into one-2-one sessions directly through the app.</p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Keep contact details up to date</h2>
-    <p class="all">The app will remind parents to update their emergency contact details every year.</p>
-    <p class="all">The details will be stored securely on your phone, so you'll always have access to them.
-    </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Take registers</h2>
-    <p class="all">Use a single-tap to register each student into your class.
-    </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Digitize your paperwork</h2>
-    <p class="all">Design a form in Joyzo&trade;, defining the data fields you want, and send it to parents.</p>
-    <p class="all">You can view the results in an Excel-style table.
-    </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Sell merchandise from your events</h2>
-    <p class="all">Offer DVDs, videos and digital pictures for sale inside the app for parents to buy.
-    </p>
-  </section>
-  <section class="feature">
-    <h2 class="all">Parents without a smartphone?</h2>
-    <p class="all">We'll also deliver your messages and invoices via email, Facebook and/or Twitter.</p>
-  </section>
+    </section>
+    <section class="feature">
+      <h2 class="all">Raise invoices easily</h2>
+      <p class="all">You can raise one-off invoices or you can create invoices for all the kids in one class.</p>
+      <p class="all">The app will regularly check your account and let you know who has and hasn't paid.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Track your payments</h2>
+      <p class="all">Parents will automatically get reminders as payments are coming up and more notices if they are
+        overdue.</p>
+      <p class="all">You can add late fees automatically too.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Management reports</h2>
+      <p class="all">View a breakdown of revenue by class and time to identify your best performing sessions.</p>
+      <p class="all">Perform "what-if" analysis to experiment with pricing to make the best use of your teaching time.
+      </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Key info at lesson time</h2>
+      <p class="all">Such as birthdays and membership anniversaries and quickly identify anyone with outstanding fees.
+      </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Keep parents informed</h2>
+      <p class="all">Send a message to a group of parents and they'll get a notification directly on their phone.</p>
+      <p class="all">Parents can respond but only you can message the whole group.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Pass on expenses to parents</h2>
+      <p class="all">Log expenses like books, grading fees, coach hire, etc, so parents can pay what they owe.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Sell more club clothing</h2>
+      <p class="dance">Whether it's grade 5 tap shoes or crisp white trainers, parents order your clothing through the
+        app.
+        <p class="football">Parents can order team shirts, hoodies and other kit you sell directly through the app.
+          <p class="art drama gymnastics infant martial music nature science sports other">Parents order uniform through
+            the app.</p>
+          <p class="all">Parents are guided through the order process to capture any required options like size, colour
+            or
+            even the name to be printed on the back!</p>
+          <p class="all">Orders are then consolidated together for you to pass on to your clothing supplier.</p>
+        </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Showcase your big events</h2>
+      <p class="all">Parents can see the big event in the app and can add it to their regular calendar.</p>
+      <p class="all">You can also build packages that include rehearsal times, event clothing and the big day.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Sell tickets</h2>
+      <p class="all">Students and parents can order digital tickets and use their smartphone as proof on the day of the
+        event.</p>
+      <p class="all">You can keep track of sales and optionally limit ticket numbers for seated events.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Schedule one-2-ones</h2>
+      <p class="all">Parents can book their kids into one-2-one sessions directly through the app.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Stay compliant</h2>
+      <p class="all">The app will remind parents to update their emergency contact details every year.</p>
+      <p class="all">The details will be stored securely on your phone, so you'll always have access to them.
+      </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Take registers</h2>
+      <p class="all">Use a single-tap to register each student into your class.</p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Digitize your paperwork</h2>
+      <p class="all">Design a form in Joyzo&trade;, defining the data fields you want, and send it to parents.</p>
+      <p class="all">You can view the results in an Excel-style table.
+      </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Sell event merchandise</h2>
+      <p class="all">Offer DVDs, videos and digital pictures for sale inside the app for parents to buy.
+      </p>
+    </section>
+    <section class="feature">
+      <h2 class="all">Parents without a smartphone?</h2>
+      <p class="all">No problem.</p>
+      <p>We'll also deliver your messages and invoices via email, Facebook and/or Twitter.</p>
+    </section>
+  </div>
   <section class="faq">
     <h2 class="alt">Frequently Asked Questions</h2>
     <div class="questions">
@@ -659,7 +745,7 @@
     }
   }
 
-  function isAnyPartOfElementInViewport (el) {
+  function isAnyPartOfElementInViewport(el) {
     const rect = el.getBoundingClientRect()
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight)
     const windowWidth = (window.innerWidth || document.documentElement.clientWidth)
@@ -713,4 +799,5 @@
     }
   }
 </script>
+
 </html>
