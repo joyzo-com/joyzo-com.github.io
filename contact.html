@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="css/reset.css" rel="stylesheet">
+  <title>Contact</title>
+
+  <style>
+    html {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      padding: 1rem;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+
+    .back {
+      text-decoration: none;
+      color: green;
+    }
+
+    .logo {
+      width: 4rem;
+      vertical-align: middle;
+    }
+
+    form {
+      width: 100%;
+      margin: 2rem 0 0 0;
+    }
+
+    @media (min-width: 500px) {
+
+      form {
+        border: 0.1rem solid black;
+        border-radius: 0.2rem;
+        max-width: 40rem;
+        margin: 2rem auto 0 auto;
+        padding: 2rem;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      display: block;
+      border: none;
+      font-size: 1rem;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin: 0 4px 8px 0;
+    }
+
+    select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      color: white;
+      background-color: green;
+      font-size: 1rem;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      border: none;
+    }
+
+    fieldset {
+      margin-bottom: 30px;
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+
+    .number {
+      background-color: green;
+      color: white;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 1rem;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+    }
+
+    @media (min-width: 700px) {
+      p, label, legend {
+        font-size: 1.25rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .logo {
+        width: 6rem;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="date"],
+      input[type="datetime"],
+      input[type="email"],
+      input[type="number"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="time"],
+      input[type="url"],
+      textarea,
+      select {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="back">&#9664; <img class="logo" src="img/joyzo-logo.png" alt="Joyzo" /></a>
+  <h1>Contact Us</h1>
+  <p>For general enquiries, indicative pricing and to get access to the early adopters programme.</p>
+  <p>You can use the form below or email <a href="mailto:hello@joyzo.com">hello@joyzo.com</a>.</p>
+  <p>This form <u>does not</u> sign you up to a mailing list.  All fields optional.</p>
+
+  <form action="https://formspree.io/hello@joyzo.com" method="post">
+    <fieldset>
+      <legend><span class="number">1</span> Your basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="club">Club:</label>
+      <input type="text" id="club" name="club">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="tel">Telephone:</label>
+      <input type="tel" id="tel" name="tel">
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="number">2</span> Your preferences</legend>
+
+      <label for="contact_pref">Contact me by</label>
+      <select id="contact_pref" name="contact_pref">
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="email_or_phone">Email or Phone</option>
+      </select>
+
+      <label>Interests</label>
+      <input type="checkbox" id="general" value="general" name="general"><label class="light"
+        for="interests">General Enquiries</label><br>
+      <input type="checkbox" id="pricing" value="pricing" name="pricing"><label class="light"
+        for="interests">Pricing</label><br>
+      <input type="checkbox" id="eap" value="eap" name="eap"><label class="light"
+        for="interests">Early Adopter Programme</label><br>
+      <br />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </fieldset>
+
+    <button type="submit">Send</button>
+  </form>
+</body>
+
+</html>
